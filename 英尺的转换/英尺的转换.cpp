@@ -16,6 +16,10 @@ public:
 	double inch3;
 	double a;
 	int b;
+	void danisi()
+	{
+		cout << "ÇëÊäÈëÃ×.Ó¢³ßºÍÓ¢´ç" << endl;
+	}
 	void import()
 	{
 		cin >> mater;
@@ -46,6 +50,7 @@ public:
 int main()
 {
 	Britishlength oc;
+	oc.danisi();
 	oc.import();
 	oc.transtion();
 	oc.arithmetic();

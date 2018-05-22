@@ -9,8 +9,8 @@ class Britishlength
 public:
 	double feet;
 	double inch;
-	int feet2;
-	int inch2;
+	double feet2;
+	double inch2;
 	int mater;
 	int feet3;
 	double inch3;
@@ -33,13 +33,13 @@ public:
 	}
 	void arithmetic()
 	{
-		inch3 = inch + inch2;
+		inch3 = inch + inch2+(feet2-(int)feet2)*12;
 		if (inch3 >= 12)
 		{
 			b = inch3 / 12;
 			inch3 = inch3 - b * 12;
 		}
-		feet3 = feet2 + b + feet;
+		feet3 = feet2 + b + (int)feet;
 	}
 	void display()
 	{
